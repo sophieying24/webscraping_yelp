@@ -8,43 +8,31 @@ class YelpSpider(Spider):
     name = 'yelp_spider'
     allowed_urls = ['https://www.yelp.com/']
 
-    # start_urls = ['https://www.yelp.com/search?find_desc=japanese%20food&find_loc=San%20Francisco%2C%20CA&ns=1&start=0']
-
     # cuisines = ['japanese', 'mexican', 'american', 'italian', 'thai', 'chinese', 'mediterranean']
     # locations = ['San%20Francisco%2C%20CA','New%20York%2C%20NY', 'Austin%2C%20TX']
-
     # start_urls = [f'https://www.yelp.com/search?find_desc={cuisine}&find_loc={location}&ns=1&start=0' for location in locations for cuisine in cuisines]
 
-
-    # start_urls = ['https://www.yelp.com/search?find_desc=japanese&find_loc=San%20Francisco%2C%20CA&ns=1&start=0'] # yelp1
-
-    # start_urls = ['https://www.yelp.com/search?find_desc=mexican&find_loc=San%20Francisco%2C%20CA&ns=1&start=0'] # yelp2
-
-
-    # start_urls = ['https://www.yelp.com/search?find_desc=italian&find_loc=San%20Francisco%2C%20CA&ns=1&start=0'] # yelp3
-    # start_urls = ['https://www.yelp.com/search?find_desc=thai&find_loc=San%20Francisco%2C%20CA&ns=1&start=0'] #yelp 4
-
-    # start_urls = ['https://www.yelp.com/search?find_desc=chinese&find_loc=San%20Francisco%2C%20CA&ns=1&start=0'] #yelp 5
-    # start_urls =  ['https://www.yelp.com/search?find_desc=mediterranean&find_loc=San%20Francisco%2C%20CA&ns=1&start=0'] # yelp 6
-
-    # start_urls =  ['https://www.yelp.com/search?find_desc=japanese&find_loc=New%20York%2C%20NY&ns=1&start=0'] # yelp 7
-    # start_urls = ['https://www.yelp.com/search?find_desc=mexican&find_loc=New%20York%2C%20NY&ns=1&start=0'] # yelp 8
-    # start_urls = ['https://www.yelp.com/search?find_desc=italian&find_loc=New%20York%2C%20NY&ns=1&start=0'] # yelp 9
-    # start_urls = ['https://www.yelp.com/search?find_desc=thai&find_loc=New%20York%2C%20NY&ns=1&start=0'] #yelp 10
-    # start_urls = ['https://www.yelp.com/search?find_desc=chinese&find_loc=New%20York%2C%20NY&ns=1&start=0'] # yelp11
-    # start_urls = ['https://www.yelp.com/search?find_desc=mediterranean&find_loc=New%20York%2C%20NY&ns=1&start=0'] # # yelp12
-    # start_urls = ['https://www.yelp.com/search?find_desc=japanese&find_loc=Austin%2C%20TX&ns=1&start=0'] # yelp13
-    # start_urls = ['https://www.yelp.com/search?find_desc=mexican&find_loc=Austin%2C%20TX&ns=1&start=0'] # yelp14
-    # start_urls = ['https://www.yelp.com/search?find_desc=italian&find_loc=Austin%2C%20TX&ns=1&start=0'] # yelp15
-    # start_urls = ['https://www.yelp.com/search?find_desc=thai&find_loc=Austin%2C%20TX&ns=1&start=0'] # yelp16
-    # start_urls = ['https://www.yelp.com/search?find_desc=chinese&find_loc=Austin%2C%20TX&ns=1&start=0'] # yelp17
-    # start_urls = ['https://www.yelp.com/search?find_desc=mediterranean&find_loc=Austin%2C%20TX&ns=1&start=0'] # yelp18
-
-
-    # start_urls = ['https://www.yelp.com/search?find_desc=american&find_loc=San%20Francisco%2C%20CA&ns=1&start=0'] # yelp19
-    # start_urls = ['https://www.yelp.com/search?find_desc=american&find_loc=New%20York%2C%20NY&ns=1&start=0'] # yelp 20
-    start_urls = ['https://www.yelp.com/search?find_desc=american&find_loc=Austin%2C%20TX&ns=1&start=0'] # yelp 21
-
+    start_urls = ['https://www.yelp.com/search?find_desc=japanese&find_loc=San%20Francisco%2C%20CA&ns=1&start=0',
+                 'https://www.yelp.com/search?find_desc=mexican&find_loc=San%20Francisco%2C%20CA&ns=1&start=0',
+                 'https://www.yelp.com/search?find_desc=american&find_loc=San%20Francisco%2C%20CA&ns=1&start=0',
+                 'https://www.yelp.com/search?find_desc=italian&find_loc=San%20Francisco%2C%20CA&ns=1&start=0',
+                 'https://www.yelp.com/search?find_desc=thai&find_loc=San%20Francisco%2C%20CA&ns=1&start=0',
+                 'https://www.yelp.com/search?find_desc=chinese&find_loc=San%20Francisco%2C%20CA&ns=1&start=0',
+                 'https://www.yelp.com/search?find_desc=mediterranean&find_loc=San%20Francisco%2C%20CA&ns=1&start=0',
+                 'https://www.yelp.com/search?find_desc=japanese&find_loc=New%20York%2C%20NY&ns=1&start=0',
+                 'https://www.yelp.com/search?find_desc=mexican&find_loc=New%20York%2C%20NY&ns=1&start=0',
+                 'https://www.yelp.com/search?find_desc=american&find_loc=New%20York%2C%20NY&ns=1&start=0',
+                 'https://www.yelp.com/search?find_desc=italian&find_loc=New%20York%2C%20NY&ns=1&start=0',
+                 'https://www.yelp.com/search?find_desc=thai&find_loc=New%20York%2C%20NY&ns=1&start=0',
+                 'https://www.yelp.com/search?find_desc=chinese&find_loc=New%20York%2C%20NY&ns=1&start=0',
+                 'https://www.yelp.com/search?find_desc=mediterranean&find_loc=New%20York%2C%20NY&ns=1&start=0',
+                 'https://www.yelp.com/search?find_desc=japanese&find_loc=Austin%2C%20TX&ns=1&start=0',
+                 'https://www.yelp.com/search?find_desc=mexican&find_loc=Austin%2C%20TX&ns=1&start=0',
+                 'https://www.yelp.com/search?find_desc=american&find_loc=Austin%2C%20TX&ns=1&start=0',
+                 'https://www.yelp.com/search?find_desc=italian&find_loc=Austin%2C%20TX&ns=1&start=0',
+                 'https://www.yelp.com/search?find_desc=thai&find_loc=Austin%2C%20TX&ns=1&start=0',
+                 'https://www.yelp.com/search?find_desc=chinese&find_loc=Austin%2C%20TX&ns=1&start=0',
+                 'https://www.yelp.com/search?find_desc=mediterranean&find_loc=Austin%2C%20TX&ns=1&start=0']
 
 
 
@@ -72,7 +60,7 @@ class YelpSpider(Spider):
         for url in self.start_urls:
             url = url[:-1]
             for i in range(num_pages):
-                url_list.append(url + str(i*10))
+                url_list.append(url + str(i*30))
 
 
         for url in url_list:
